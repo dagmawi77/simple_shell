@@ -50,7 +50,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	free(ptr);
 	return (mem);
 }
-
 /**
  * assign_lineptr - Reassigns the lineptr variable for _getline.
  * @lineptr: A buffer to store an input string.
