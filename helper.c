@@ -4,7 +4,6 @@ void free_args(char **args, char **front);
 char *get_pid(void);
 char *get_env_value(char *beginning, int len);
 void variable_replacement(char **args, int *exe_ret);
-
 /**
  * free_args - Frees up memory taken by args.
  * @args: A null-terminated double pointer containing commands/arguments.
@@ -84,12 +83,10 @@ char *get_env_value(char *beginning, int len)
 
 	return (replacement);
 }
-
 /**
  * variable_replacement - Handles variable replacement.
  * @line: A double pointer containing the command and arguments.
  * @exe_ret: A pointer to the return value of the last executed command.
- *
  * Description: Replaces $$ with the current PID, $? with the return value.
  */
 void variable_replacement(char **line, int *exe_ret)
